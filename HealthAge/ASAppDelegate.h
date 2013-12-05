@@ -11,5 +11,15 @@
 @interface ASAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet NSView * weightV;
+@property (assign) IBOutlet NSView * surveyV;
+@property (assign) IBOutlet NSView * infoV ;
+@property (assign) IBOutlet NSView * resultsV;
+
+
+- (IBAction) showBMIView:(id)sender;
+- (IBAction) showSurveyView;
+- (IBAction) showInfoView;
+- (IBAction) showResultsView;
 
 @end

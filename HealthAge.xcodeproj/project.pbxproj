@@ -18,6 +18,10 @@
 		0D95B6DB1829072400CF5D49 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D95B6BA1829072400CF5D49 /* Cocoa.framework */; };
 		0D95B6E31829072400CF5D49 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0D95B6E11829072400CF5D49 /* InfoPlist.strings */; };
 		0D95B6E51829072400CF5D49 /* HealthAgeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D95B6E41829072400CF5D49 /* HealthAgeTests.m */; };
+		0D95B6F01848FD1E00CF5D49 /* ASWeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D95B6EF1848FD1E00CF5D49 /* ASWeightViewController.m */; };
+		0D95B6F8184D38EC00CF5D49 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D95B6F7184D38EC00CF5D49 /* icon.png */; };
+		0D95B6FB184D568800CF5D49 /* ASAgeCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D95B6FA184D568800CF5D49 /* ASAgeCalculator.m */; };
+		0D95B6FE184E1EED00CF5D49 /* ASSurveyTally.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D95B6FD184E1EED00CF5D49 /* ASSurveyTally.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,13 @@
 		0D95B6E01829072400CF5D49 /* HealthAgeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HealthAgeTests-Info.plist"; sourceTree = "<group>"; };
 		0D95B6E21829072400CF5D49 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0D95B6E41829072400CF5D49 /* HealthAgeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthAgeTests.m; sourceTree = "<group>"; };
+		0D95B6EE1848FD1E00CF5D49 /* ASWeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASWeightViewController.h; sourceTree = "<group>"; };
+		0D95B6EF1848FD1E00CF5D49 /* ASWeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASWeightViewController.m; sourceTree = "<group>"; };
+		0D95B6F7184D38EC00CF5D49 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		0D95B6F9184D568800CF5D49 /* ASAgeCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAgeCalculator.h; sourceTree = "<group>"; };
+		0D95B6FA184D568800CF5D49 /* ASAgeCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAgeCalculator.m; sourceTree = "<group>"; };
+		0D95B6FC184E1EED00CF5D49 /* ASSurveyTally.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASSurveyTally.h; sourceTree = "<group>"; };
+		0D95B6FD184E1EED00CF5D49 /* ASSurveyTally.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASSurveyTally.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +87,7 @@
 		0D95B6AE1829072400CF5D49 = {
 			isa = PBXGroup;
 			children = (
+				0D95B6F7184D38EC00CF5D49 /* icon.png */,
 				0D95B6C01829072400CF5D49 /* HealthAge */,
 				0D95B6DE1829072400CF5D49 /* HealthAgeTests */,
 				0D95B6B91829072400CF5D49 /* Frameworks */,
@@ -117,7 +129,13 @@
 			children = (
 				0D95B6CC1829072400CF5D49 /* ASAppDelegate.h */,
 				0D95B6CD1829072400CF5D49 /* ASAppDelegate.m */,
+				0D95B6FC184E1EED00CF5D49 /* ASSurveyTally.h */,
+				0D95B6FD184E1EED00CF5D49 /* ASSurveyTally.m */,
+				0D95B6F9184D568800CF5D49 /* ASAgeCalculator.h */,
+				0D95B6FA184D568800CF5D49 /* ASAgeCalculator.m */,
 				0D95B6CF1829072400CF5D49 /* MainMenu.xib */,
+				0D95B6EE1848FD1E00CF5D49 /* ASWeightViewController.h */,
+				0D95B6EF1848FD1E00CF5D49 /* ASWeightViewController.m */,
 				0D95B6D21829072400CF5D49 /* Images.xcassets */,
 				0D95B6C11829072400CF5D49 /* Supporting Files */,
 			);
@@ -235,6 +253,7 @@
 				0D95B6D31829072400CF5D49 /* Images.xcassets in Resources */,
 				0D95B6CB1829072400CF5D49 /* Credits.rtf in Resources */,
 				0D95B6D11829072400CF5D49 /* MainMenu.xib in Resources */,
+				0D95B6F8184D38EC00CF5D49 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,8 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D95B6F01848FD1E00CF5D49 /* ASWeightViewController.m in Sources */,
 				0D95B6CE1829072400CF5D49 /* ASAppDelegate.m in Sources */,
 				0D95B6C71829072400CF5D49 /* main.m in Sources */,
+				0D95B6FE184E1EED00CF5D49 /* ASSurveyTally.m in Sources */,
+				0D95B6FB184D568800CF5D49 /* ASAgeCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
